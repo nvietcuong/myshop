@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myshop/ui/shared/app_drawer.dart';
 import 'package:provider/provider.dart';
-import '';
 
 import 'user_product_list_tile.dart';
 import 'products_manager.dart';
@@ -29,7 +28,7 @@ class UserProductsScreen extends StatelessWidget {
     );
   }
 
-  Widget buildUserProductLisView(ProductsManager productsManager) {
+  Widget buildUserProductLisView(productsManager) {
     return Consumer<ProductsManager>(
       builder: (ctx, productsManager, child) {
         return ListView.builder(

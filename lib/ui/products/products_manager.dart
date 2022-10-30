@@ -45,7 +45,7 @@ class ProductsManager with ChangeNotifier {
   }
 
   List<Product> get items {
-    return [];
+    return [..._items];
   }
 
   List<Product> get favoriteItems {
